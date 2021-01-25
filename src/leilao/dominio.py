@@ -35,6 +35,7 @@ class Avaliador:
         self.menor_lance = sys.float_info.max
 
     def avalia(self, leilao: Leilao):
+
         for lance in leilao.lances:
             if lance.valor > self.maior_lance:
                 self.maior_lance = lance.valor
